@@ -1,5 +1,5 @@
 ***********************************************************************************************************************
-*  №  *  Summary   *  Description    *  Steps to reproduce  *  Environment *  Reproducibility  *  Severity * Priority *
+*  ID *  Summary   *  Description    *  Steps to reproduce  *  Environment *  Reproducibility  *  Severity * Priority *
 ***********************************************************************************************************************
 *     *            *                 *                      *	           *                   *           *          *
 *     *            *                 *                      *              *                   *           *          *
