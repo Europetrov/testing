@@ -49,7 +49,7 @@ WHERE name LIKE '%8';
 -- 12. Вывести пользователей где в имени в есть буква а
 
 SELECT * FROM students
-WHERE name LIKE '%a%' or name like '%а%';
+WHERE name LIKE '%a%';
 
 -- 13. Вывести пользователей которые были созданы 2021-07-12 00:00:00
 
@@ -71,50 +71,50 @@ WHERE created_on = '2021-07-12 00:00:00' AND name LIKE '%Andrey%';
 SELECT * FROM students
 WHERE created_on = '2021-07-12 00:00:00' AND name LIKE '%8%';
 
--- 17. Вывести пользователя у которых id равен 10
+-- 17. Вывести пользователя у которых id равен 110
 
 SELECT * FROM students
-WHERE id = 10;
+WHERE id = 110;
 
--- 18. Вывести пользователя у которых id равен 53
-
-SELECT * FROM students
-WHERE id = 53;
-
--- 19. Вывести пользователя у которых id больше 40
+-- 18. Вывести пользователя у которых id равен 153
 
 SELECT * FROM students
-WHERE id > 40;
+WHERE id = 153;
 
--- 20. Вывести пользователя у которых id меньше 30
-
-SELECT * FROM students
-WHERE id < 30;
-
--- 21. Вывести пользователя у которых id меньше 27 или больше 88
+-- 19. Вывести пользователя у которых id больше 140
 
 SELECT * FROM students
-WHERE id < 27 OR id > 88;
+WHERE id > 140;
 
--- 22. Вывести пользователя у которых id меньше либо равно 37
-
-SELECT * FROM students
-WHERE id <= 37;
-
--- 23. Вывести пользователя у которых id больше либо равно 37
+-- 20. Вывести пользователя у которых id меньше 130
 
 SELECT * FROM students
-WHERE id >= 37;
+WHERE id < 130;
 
--- 24. Вывести пользователя у которых id больше 80 но меньше 90
-
-SELECT * FROM students
-WHERE id > 80 AND id < 90;
-
--- 25. Вывести пользователя у которых id между 80 и 90
+-- 21. Вывести пользователя у которых id меньше 127 или больше 188
 
 SELECT * FROM students
-WHERE id BETWEEN 80 AND 90;
+WHERE id < 127 OR id > 188;
+
+-- 22. Вывести пользователя у которых id меньше либо равно 137
+
+SELECT * FROM students
+WHERE id <= 137;
+
+-- 23. Вывести пользователя у которых id больше либо равно 137
+
+SELECT * FROM students
+WHERE id >= 137;
+
+-- 24. Вывести пользователя у которых id больше 180 но меньше 190
+
+SELECT * FROM students
+WHERE id > 180 AND id < 190;
+
+-- 25. Вывести пользователя у которых id между 180 и 190
+
+SELECT * FROM students
+WHERE id BETWEEN 180 AND 190;
 
 -- 26. Вывести пользователей где password равен 12333, 1m313, 123313
 
@@ -147,7 +147,3 @@ ORDER BY created_on;
 
 SELECT id, name, created_on FROM students
 ORDER BY created_on DESC;
-
---test
-
-SHOW COLUMNS FROM qa_students_1;
